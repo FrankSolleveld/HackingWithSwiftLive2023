@@ -46,10 +46,20 @@ struct AboutView: View {
                         .background(.blue.gradient)
                         .clipShape(RoundedRectangle(cornerRadius: 20))
                         .foregroundStyle(.white)
+                        .scrollTransition(
+                            topLeading: .identity,
+                            bottomTrailing: .animated(.bouncy)
+                        ) { content, phase in
+                            content
+                                .scaleEffect(phase == .topLeading ? 0.9 : 1)
+                                .blur(radius: phase == .topLeading ? 1.5 : 0)
+                                .saturation(phase == .topLeading ? 1 : 1.5)
+                        }
                     }
                 }
                 .padding(.horizontal)
             }
+            .scrollIndicatorsFlash(onAppear: true)
             .navigationTitle("How it works")
         }
     }
@@ -57,4 +67,5 @@ struct AboutView: View {
 
 #Preview {
     AboutView()
+        .environmentObject(DataController())
 }

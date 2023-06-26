@@ -38,6 +38,8 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Work Less")
+            .scrollIndicatorsFlash(onAppear: true)
+            .scrollIndicatorsFlash(trigger: dataController.activityProgress.count)
             .toolbar {
                 Button {
                     showingAddActivity.toggle()

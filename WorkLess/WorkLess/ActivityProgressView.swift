@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ActivityProgressView: View {
     @EnvironmentObject var dataController: DataController
+    @State private var isPressed = false
     var item: ActivityProgress
 
     var body: some View {
@@ -26,12 +27,14 @@ struct ActivityProgressView: View {
             }
 
             Button {
+                isPressed.toggle()
                 withAnimation {
                     dataController.add(to: item)
                 }
             } label: {
                 Label(item.progressTitle, systemImage: item.progressIcon)
                     .labelStyle(.iconOnly)
+                    .symbolEffect(.bounce, value: isPressed)
             }
             .disabled(item.isComplete)
             .buttonStyle(.bordered)
