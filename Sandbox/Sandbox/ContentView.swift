@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import Observation
+
+@Observable
+class ViewModel {
+    var name = "Taylor"
+    var age = 26
+}
 
 struct ContentView: View {
-
     var body: some View {
         NavigationStack {}
     }

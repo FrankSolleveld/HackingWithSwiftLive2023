@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct WorkLessApp: App {
-    @StateObject private var data = DataController()
+    @State private var data = DataController()
 
     var body: some Scene {
         WindowGroup {
@@ -24,7 +24,7 @@ struct WorkLessApp: App {
                         Label("How it Works", systemImage: "questionmark.circle")
                     }
             }
-            .environmentObject(data)
+            .environment(data)
         }
     }
 }

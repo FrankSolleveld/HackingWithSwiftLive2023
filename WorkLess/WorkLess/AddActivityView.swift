@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddActivityView: View {
-    @EnvironmentObject var dataController: DataController
+    @Environment(DataController.self) var dataController
     @Environment(\.dismiss) var dismiss
 
     @State private var unusedActivities = [Activity]()
@@ -78,5 +78,5 @@ struct AddActivityView: View {
 
 #Preview {
     AddActivityView()
-        .environmentObject(DataController())
+        .environment(DataController())
 }

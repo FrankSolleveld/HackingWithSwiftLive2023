@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ActivityProgressView: View {
-    @EnvironmentObject var dataController: DataController
+    @Environment(DataController.self) var dataController
     @State private var isPressed = false
     var item: ActivityProgress
 
     var body: some View {
         HStack {
+            let _ = print("Invoking body of \(item.id)")
             Image(item.id)
                 .resizable()
                 .scaledToFit()

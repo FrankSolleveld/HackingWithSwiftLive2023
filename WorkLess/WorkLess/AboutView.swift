@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AboutView: View {
-    @EnvironmentObject var dataController: DataController
+    @Environment(DataController.self) var dataController
 
     let aboutTextStrings = [
         "Welcome to *Work Less*, an application designed to encourage a healthier, more balanced lifestyle by shifting focus from the unending cycle of work to the vibrant exploration of new hobbies and interests. We strongly believe that there's more to life than just work, and we're here to help you rediscover that.",
@@ -67,5 +67,5 @@ struct AboutView: View {
 
 #Preview {
     AboutView()
-        .environmentObject(DataController())
+        .environment(DataController())
 }

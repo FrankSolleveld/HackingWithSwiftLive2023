@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import Observation
 
-class DataController: ObservableObject {
+@Observable
+class DataController {
     private(set) var allActivities = Bundle.main.decode("Activities.json", as: [Activity].self)
-    @Published private(set) var activityProgress: [ActivityProgress]
+    private(set) var activityProgress: [ActivityProgress] = []
 
     private let savePath = URL.documentsDirectory.appendingPathComponent("SavedProgress")
 
