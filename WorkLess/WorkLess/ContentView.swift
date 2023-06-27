@@ -22,6 +22,10 @@ struct ContentView: View {
                     if dataController.activityProgress.isEmpty {
                         ContentUnavailableView {
                             Label("No Activities", systemImage: "figure.disc.sports")
+                                .phaseAnimator([true, false]) { content, phase in
+                                    content
+                                        .scaleEffect(phase ? 0.95 : 1)
+                                }
                         } description: {
                             Text("Get a hobby for once...")
                         } actions: {
