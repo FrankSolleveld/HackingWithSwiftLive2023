@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		954B6FDC2A4B6E2900035163 /* EditRestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954B6FDB2A4B6E2900035163 /* EditRestaurantView.swift */; };
+		954B6FDE2A4B75C200035163 /* RestaurantListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954B6FDD2A4B75C200035163 /* RestaurantListingView.swift */; };
 		959E8EF12A4B5567001DE092 /* GustoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E8EF02A4B5567001DE092 /* GustoApp.swift */; };
 		959E8EF32A4B5567001DE092 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959E8EF22A4B5567001DE092 /* ContentView.swift */; };
 		959E8EF52A4B5568001DE092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959E8EF42A4B5568001DE092 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		954B6FDB2A4B6E2900035163 /* EditRestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRestaurantView.swift; sourceTree = "<group>"; };
+		954B6FDD2A4B75C200035163 /* RestaurantListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListingView.swift; sourceTree = "<group>"; };
 		959E8EED2A4B5567001DE092 /* Gusto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gusto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959E8EF02A4B5567001DE092 /* GustoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GustoApp.swift; sourceTree = "<group>"; };
 		959E8EF22A4B5567001DE092 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 				959E8EF02A4B5567001DE092 /* GustoApp.swift */,
 				959E8F002A4B55EF001DE092 /* Models */,
 				959E8EF22A4B5567001DE092 /* ContentView.swift */,
+				954B6FDB2A4B6E2900035163 /* EditRestaurantView.swift */,
+				954B6FDD2A4B75C200035163 /* RestaurantListingView.swift */,
 				959E8EF42A4B5568001DE092 /* Assets.xcassets */,
 				959E8EF62A4B5568001DE092 /* Preview Content */,
 			);
@@ -149,7 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				959E8EF32A4B5567001DE092 /* ContentView.swift in Sources */,
+				954B6FDC2A4B6E2900035163 /* EditRestaurantView.swift in Sources */,
 				959E8EF12A4B5567001DE092 /* GustoApp.swift in Sources */,
+				954B6FDE2A4B75C200035163 /* RestaurantListingView.swift in Sources */,
 				959E8EFF2A4B55B3001DE092 /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
